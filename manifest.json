@@ -1,12 +1,10 @@
-
 {
   "name": "Japan Connect",
   "short_name": "Japan Connect",
-  "description": "つながる、共有する。",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f4f6fa",
-  "theme_color": "#101827",
+  "background_color": "#f3f6fb",
+  "theme_color": "#10264d",
   "icons": [
     {
       "src": "/icons/icon.svg",
