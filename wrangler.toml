@@ -1,7 +1,6 @@
-
 name = "japan-connect"
 main = "worker.js"
-compatibility_date = "2026-10-30"
+compatibility_date = "2026-10-31"
 
 [assets]
 directory = "."
@@ -12,3 +11,16 @@ run_worker_first = ["/api/*"]
 binding = "DB"
 database_name = "japan-connect-db"
 database_id = "77ba921b-aef5-4c74-8c3a-9a0ebf8a87e7"
+
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "RoomHub"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["RoomHub"]
+
+# Optional R2 upload bucket can be added after creating it in Cloudflare.
+# [[r2_buckets]]
+# binding = "UPLOADS"
+# bucket_name = "japan-connect-uploads"
